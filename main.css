@@ -1,0 +1,43 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#sidebar, #content {
+  height: 100%;
+  overflow:auto;
+  float:left;
+  transition: width .35s;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #4a4095;
+    width: calc(16px*5); 
+}
+
+#sidebar.collapsed {
+  width: 0;
+}
+
+#sidebar.collapsed + #content {
+  width: 100%;
+}
+
+#content {
+    display: flex;
+    background: #e4e4e4;
+    width: calc(100% - (16px*5));
+}
+
+._button {
+    width: calc(50px*5); 
+    height: calc(10px*5); 
+    background-image: url("assets/pullybg.png");  
+    background-color: white; 
+/*    border-width:1px; 
+    border-style:solid;
+*/}
