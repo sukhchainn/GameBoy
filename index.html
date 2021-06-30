@@ -13,16 +13,29 @@
 			<img src="assets/NC.png" alt="not found" style="height: calc(21px*5); background-color: black;" data-pixelate="src"/>
 		</div>
 		<div>
-		<img src="assets/2bityou.png" alt="not found" style="height: calc(17px*5); background-color: black;" data-pixelate="src"/>
+			<a href="https://twitter.com/2bityou">
+				<img src="assets/2bityou.png" alt="not found" style="height: calc(17px*5); background-color: black;" data-pixelate="src"/>
+			</a>
 		</div>
 	</div>
 	<div id="content">
-		<button id="toggle" 
-				style="width: calc(15px*5); height: calc(15px*5); background-color: white; background-image: url('assets/button.png');"
-				data-pixelate="bg"><img src="assets/close.svg" /></button>
-		<img src="assets/GameBoyTalking3.png" alt="not found" 
-		style="width: calc(32*5); height: calc(32*5); background-color: white;" width="160px" height="160px" data-pixelate="src"
-		data-animateSet="assets/GameBoyTalking3.png, assets/GameBoyTalking2.png, assets/GameBoyTalking1.png"/>
+		<button id="toggle" data-pixelate="bg">
+			<img src="assets/close.png" style="width: calc(5px*5); height: calc(5px*5); background-color: white;" data-pixelate="src"/>
+		</button>
+
+		<h1 id="title">GameBoy</h1>
+		<div style="display: flex; justify-content: center;">
+			<img src="assets/GameBoyTalking1.png" alt="not found" class="gameboytalking" width="160px" height="160px"data-pixelate="src"/>
+			<p class="chat" data-pixelate="bg">Hey bob, it's me Mario!</p>
+		</div>
+		<div style="display: flex; justify-content: center;">
+			<p class="chat-invert" data-pixelate="bg">What's up Mario, long time no see.</p>
+			<img src="assets/GameBoyTalking2.png" alt="not found" class="gameboytalking" width="160px" height="160px"data-pixelate="src"/>
+		</div>
+		<div style="display: flex; justify-content: center;">
+			<img src="assets/GameBoyTalking3.png" alt="not found" class="gameboytalking" width="160px" height="160px"data-pixelate="src"/>
+			<p class="chat" data-pixelate="bg">What are saying, we met yesterday.</p>
+		</div>
 	</div>
 
 	<script type="text/javascript" src="scripts/canvas.js"></script>
